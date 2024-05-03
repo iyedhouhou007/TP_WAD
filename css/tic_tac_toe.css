@@ -1,0 +1,139 @@
+/* Preserve existing styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.body{
+    background-color: #f2f2f2;
+    height: calc(100% - 60px * 2 );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 10px;
+    height: 50vh;
+    width: 50vh;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.192);
+    border-radius: 10px;
+}
+
+.container .form{
+    height: 100%;
+    display: grid;
+    gap:5px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: repeat(3, 1fr)
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: calc(100vw - 20px); /* Adjust as needed */
+        height: calc(100vw - 20px);
+    }
+}
+
+.playerSymbol { 
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensures the symbol takes up the entire height of the cell */
+}
+
+.win-message-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.win-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #195596; /* Adjust text color as needed */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+/* New styles to match navbar */
+.playerSymbol {
+    color: rgba(25, 85, 150, 1); /* Text color similar to navbar */
+}
+
+.playbtn {
+    width: 100%;
+    height: 100%;
+    background-color: #195596; /* Background color similar to navbar */
+    border: none;
+    border-radius: 8px; /* Same as navbar buttons */
+    margin: 2px;
+    cursor: pointer;
+    color: white; /* Text color similar to navbar */
+    font-size: 16px; /* Font size similar to navbar */
+    font-family: Arial, sans-serif; /* Font family similar to navbar */
+}
+
+.playbtn:hover {
+    background-color: #0d3d6f; /* Hover color similar to navbar */
+}
+
+
+/* Replay button styling */
+.replay-btn {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #195596; /* Background color similar to navbar */
+    border: none;
+    border-radius: 8px; /* Same as navbar buttons */
+    margin: 10px 0;
+    cursor: pointer;
+    color: white; /* Text color similar to navbar */
+    font-size: 16px; /* Font size similar to navbar */
+    font-family: Arial, sans-serif; /* Font family similar to navbar */
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.replay-btn:hover {
+    background-color: #0d3d6f; /* Hover color similar to navbar */
+}
+
+
+h1{
+    position: absolute;
+    top: 10%;
+    margin: 0;
+    text-align: center;
+    width: 80vw;
+    margin: 0 10vw;
+}
