@@ -44,26 +44,27 @@ TP_WAD is a web application development project that includes a guess game and a
 TP_WAD
 │
 ├── styles
-│ ├── guess_game_style.css
-│ ├── header_style.css
-│ ├── login_form.css
-│ ├── logout.css
-│ ├── tic_tac_menu.css
-│ └── tic_tac_toe.css
+│   ├── guess_game_style.css
+│   ├── header_style.css
+│   ├── login_form.css
+│   ├── logout.css
+│   ├── tic_tac_menu.css
+│   └── tic_tac_toe.css
 │
 ├── includes
-│ └── header.php
+│   └── header.php
 │
 ├── pages
-│ ├── account.php
-│ ├── index.php
-│ ├── login_form.php
-│ ├── session_init.php
-│ ├── tic_tac_menu.php
-│ ├── tic_tac_single.php
-│ └── tic_tac_toe.php
+│   ├── account.php
+│   ├── index.php
+│   ├── login_form.php
+│   ├── session_init.php
+│   ├── tic_tac_menu.php
+│   ├── tic_tac_single.php
+│   └── tic_tac_toe.php
 │
 └── README.md
+
 
 
 ## Contributing
